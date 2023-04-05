@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            width: 60%;
+            height: 90vh;
+            margin: 20px 200px;
+            background-color: rgb(39, 64, 64);;
+            position: relative;
+            
+        }
+
+        .ball1 {
+            background-color: red;
+            width: 10%;
+            border-radius: 50%;
+            height: 10vh;
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            animation: ball1 1s infinite alternate;
+        }
+
+        @keyframes ball1 {
+            from {
+                top: 2%;
+                left: 2%
+            }
+
+            to {
+                top: 40%;
+                left: 47%;
+                opacity: 0;
+            }
+        }
+
+        .ball2 {
+            background-color: greenyellow;
+            width: 10%;
+            border-radius: 50%;
+            height: 10vh;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            animation: ball2 1s infinite alternate;
+        }
+
+        @keyframes ball2 {
+            from {
+                top: 2%;
+                right: 2%
+            }
+
+            to {
+                top: 40%;
+                right: 47.2%;
+                opacity: 0;
+            }
+        }
+
+        .ball3 {
+            background-color: green;
+            width: 10%;
+            border-radius: 50%;
+            height: 10vh;
+            position: absolute;
+            bottom: 2%;
+            right: 2%;
+            animation: ball3 1s infinite alternate;
+        }
+
+        @keyframes ball3 {
+            from {
+                bottom: 2%;
+                right: 2%
+            }
+
+            to {
+                bottom: 48%;
+                right: 45.2%;
+                opacity: 0;
+            }
+        }
+
+        .ball4 {
+            background-color: thistle;
+            width: 10%;
+            border-radius: 50%;
+            height: 10vh;
+            position: absolute;
+            bottom: 2%;
+            left: 2%;
+            animation: ball4 1s infinite alternate;
+        }
+
+        @keyframes ball4 {
+            from {
+                bottom: 2%;
+                left: 2%
+            }
+
+            to {
+                bottom: 48%;
+                left: 47%;
+                opacity: 0;
+            }
+        }
+      </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+        <div class="ball4"></div>
+    </div>
+
+</body>
+
+</html>

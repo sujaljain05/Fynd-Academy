@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+    <style>
+        .cup{
+            border: 2px solid black;
+            height: 170px;
+            width: 140px;
+            margin-top: 450px;
+            margin-left: 250px;
+            border-bottom-left-radius: 30%;
+            border-bottom-right-radius: 30%;
+        }
+        .bubble1{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            background: linear-gradient(to left, #97add7a4, #8fd7c46b);
+	        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            top: 51%;
+            left: 20%;
+            opacity: 0.2;
+            animation: rise 6s infinite;
+        }
+        @keyframes rise{
+            from{top: 51%;}
+            to{top: 30%; opacity: 1;}
+        }
+
+        .bubble2{
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            background: linear-gradient(to left, #97add7a4, #8fd7c46b);
+	        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            top: 51%;
+            left: 25%;
+            opacity: 0;
+            animation: bubble2 6s infinite;
+        }
+        @keyframes bubble2{
+            from{top: 51%;}
+            to{ top: 20%; opacity: 1;}
+        }
+        .bubble3{
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            background: linear-gradient(to left, #97add7a4, #8fd7c46b);
+	        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            top: 49%;
+            left: 13%;
+            opacity: 0;
+            animation: bubble3 6s infinite;
+        }
+       
+        @keyframes bubble3{
+            from{top: 53%;}
+            to{ top: 30%; opacity: 1;}
+        }
+        .bubble4{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            background: linear-gradient(to left, #97add7a4, #8fd7c46b);
+	        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            top: 49%;
+            left: 15%;
+            opacity: 0;
+            animation: bubble4 6s infinite;
+           
+        }
+        @keyframes bubble4{
+            from{top: 51%;}
+            to{ top: 18%; opacity: 1;}
+        }
+        .bubble5{
+            width: 120px;
+            height: 120px;
+            background-color: white;
+            background: linear-gradient(to left, #97add7a4, #8fd7c46b);
+	        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            top: 52%;
+            left: 22%;
+            opacity: 0;
+            animation: bubble5 6s infinite;
+        }
+      
+        @keyframes bubble5{
+            from{top: 51%;}
+            to{ top: 5%; opacity: 1;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bubble1"> </div>
+    <div class="bubble2"> </div>
+    <div class="bubble3"> </div>
+    <div class="bubble4"> </div>
+    <div class="bubble5"> </div>
+    <div class="cup"></div> 
+   
+    
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Table</title>
+<style>
+    table{
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    caption{
+        font-size: 50px;
+    }
+    #table-head{
+        text-align: center;
+    }
+    #time{
+        padding: 9px;
+    }
+
+    #table-body{
+        text-align: center;
+    }
+    
+    #table-body td{
+        cursor: pointer;
+        font-weight: bold;
+        padding: 20px;
+    }
+    table tr td p{
+        font-weight: bold;
+    }
+    #break{
+        background-color: rgba(244, 251, 31, 0.287);
+    }
+
+    #col-grp{
+        background-color: rgba(17, 146, 232, 0.32);
+    }
+
+    #HTML-img{
+        display: none;
+    }
+
+    #CSS-img{
+        display: none;
+    }
+
+    #js-img{
+        display: none;
+    }
+
+    #react-img{
+        display: none;
+    }
+    
+    #exp-img{
+        display: none;
+    }
+
+    #HTML{
+        background-color: rgb(253, 123, 17);
+    }
+
+    #HTML:hover #HTML-img{
+        display: block;
+        position: absolute;
+        width: 17%;
+    }
+
+    #CSS{
+        background-color: rgb(188, 251, 29);
+    }
+
+    #CSS:hover #CSS-img{
+        display: block;
+        position: absolute;
+        width: 15%;
+    }
+
+    #js{
+        background-color: rgb(26, 171, 243);
+    }
+
+    #js:hover #js-img{
+        display: block;
+        position: absolute;
+        width: 15%;
+    }
+
+    #react{
+        background-color: rgb(181, 215, 197);
+    }
+    
+    #react:hover #react-img{
+        display: block;
+        position: absolute;
+        width: 15%;
+    }
+
+    #exp{
+        background-color: rgba(240, 63, 93);
+    }
+
+    #exp:hover #exp-img{
+        display: block;
+        position: absolute;
+        width: 15%;
+    }
+
+    #practice{
+        background-color:rgba(137, 43, 226, 0.675);
+    }
+</style>
+
+</head>
+<body>
+    <table border="1">
+        <caption> Time Table  </caption>
+        <thead>
+            <colgroup id="col-grp" span="6"></colgroup>
+            <tr id="table-head">
+                <td id="time"> Time </td>
+                <td> <p>I</p> <p>9:00 to 9:45</p> </td>
+                <td> <p>II</p> <p>9:45 to 10:30</p> </td>
+                <td> <p>III</p> <p>10:30 to 11:00</p> </td>
+                <td> <p>IV</p> <p>11:00 to 11:45</p> </td>
+                <td> <p>V</p> <p>11:45 to 12:30</p> </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="table-body">
+                <td>Monday</td>
+                <td id="HTML"><span id="HTML">HTML</span> <img src="./img/html-developer.jpeg" id="HTML-img" alt=""></td>
+                <td id="CSS"><span id="CSS">CSS</span> <span><img src="./img/css-developer.jpeg" id="CSS-img" alt=""></span></td>
+                <td rowspan="6" id="break"> Break </td>
+                <td id="js"><span id="js">Javascript</span> <span><img src="./img/js-developer.jpg" id="js-img" alt=""></span></td>
+                <td id="react" ><span id="react">React</span> <span><img src="./img/react-developer.jpg" id="react-img" alt=""></span></td>
+            </tr>
+
+            <tr id="table-body">
+                <td>Tuesday</td>
+                <td id="js"><span id="js">Javascript</span> <span><img src="./img/js-developer.jpg" id="js-img" alt=""></span></td>
+                <td id="HTML"><span id="HTML">HTML</span> <span><img src="./img/html-developer.jpeg" id="HTML-img" alt=""></span></td>
+                <td id="CSS"><span id="CSS">CSS</span> <span><img src="./img/css-developer.jpeg" id="CSS-img" alt=""></span></td>
+                <td id="exp"><span id="exp">Express</span> <span><img src="./img/expressjs-developer.jpg" id="exp-img" alt=""></span></td>
+            </tr>
+
+            <tr id="table-body">
+                <td>Wednesday</td>
+                <td id="react"><span id="react">React</span> <span><img src="./img/react-developer.jpg" id="react-img" alt=""></span></td>
+                <td id="CSS"><span id="CSS">CSS</span> <span><img src="./img/css-developer.jpeg" id="CSS-img" alt=""></span></td>
+                <td id="HTML"><span id="HTML">HTML</span> <span><img src="./img/html-developer.jpeg" id="HTML-img" alt=""></span></td>
+                <td id="practice" rowspan="2"><span >Practice</span></td>
+            </tr>
+
+            <tr id="table-body">
+                <td>Thursday</td>
+                <td id="js"><span id="js">Javascript</span> <span><img src="./img/js-developer.jpg" id="js-img" alt=""></span></td>
+                <td id="react" rowspan="2"><span id="react">React</span> <span><img src="./img/react-developer.jpg" id="react-img" alt=""></span></td>
+                <td id="exp"><span id="exp">Express</span> <span><img src="./img/expressjs-developer.jpg" id="exp-img" alt=""></span></td>
+                
+            </tr>
+
+            <tr id="table-body">
+                <td>Friday</td>
+                <td id="CSS"><span id="CSS">CSS</span> <span><img src="./img/css-developer" id="CSS-img" alt=""></span></td>
+                <td id="js"><span id="js">Javascript</span> <span><img src="./img/js-developer" id="js-img" alt=""></span></td>
+                <td id="exp"><span id="exp">Express</span> <span><img src="./img/expressjs-developer.jpg" id="exp-img" alt=""></span></td>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+</body>
+</HTML>

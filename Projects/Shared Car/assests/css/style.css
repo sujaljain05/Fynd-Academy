@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #00aff5;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-border: #dadada;
+}
+header .logo{
+    color: #00aff5;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header CSS Start */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .logo h2 {
+    width: 300px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 25px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+/* Header CSS End */
+
+/* Banner CSS Start */
+.banner {
+    position: relative;
+}
+
+.banner .banner-content {
+    position: absolute;
+    top: 5%;
+    left: 25%
+}
+
+.banner .banner-content .banner-heading {
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 60px;
+}
+.banner .banner-form{
+    position: absolute;
+    bottom: 15%;
+    left:18%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1pt 4pt, rgba(0, 0, 0, 0.08) 0px 2pt 8pt;
+}
+.banner .banner-form .form{
+    display: flex;
+}
+.banner .banner-form .form .leaving,.banner .banner-form .form .going,.banner .banner-form .form .date,.banner .banner-form .form .person{
+    border: 1px solid var(--color-border);
+    background-color: var(--color-white);
+    padding: 1px;
+}
+.banner .banner-form .form .leaving input,.banner .banner-form .form .going input,.banner .banner-form .form .date input,.banner .banner-form .form .person input{
+    border: 0;
+    height: 50px;
+    width: 200px;
+}
+.banner .banner-form .form .leaving{
+    border-radius: 10px 0 0 10px;
+}
+.banner .banner-form .form .submit button{
+    height: 53px;
+    background-color: var(--color-primary);
+    border: 0;
+    color: var(--color-white);
+    width: 100px;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Banner CSS End */
+.text{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.text .text1,.text .text2,.text .text3{
+    width: 280px;
+}
+.text .text1 p .heading{
+    font-weight: 500;
+}
+.publish-ride{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.publish-img{
+    margin: auto;
+}
+.publish-text{
+    margin: auto;
+}
+.publish-text h3{
+    font-size: 28px;
+}
+.publish-text p{
+    margin-top: 10px;
+}
+.publish-text .publish-btn{
+    margin-top: 10px;
+    border: 0;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* Search Section CSS Start */
+.search-form{
+    position: absolute;
+    top: 15%;
+    left:18%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1pt 4pt, rgba(0, 0, 0, 0.08) 0px 2pt 8pt;
+}
+.search-form .form{
+    display: flex;
+}
+.search-form .form .leaving,.search-form .form .going,.search-form .form .date,.search-form .form .person{
+    border: 1px solid var(--color-border);
+    background-color: var(--color-white);
+    padding: 1px;
+}
+.search-form .form .leaving input,.search-form .form .going input,.search-form .form .date input,.search-form .form .person input{
+    border: 0;
+    height: 50px;
+    width: 200px;
+}
+.search-form .form .leaving{
+    border-radius: 10px 0 0 10px;
+}
+.search-form .form .submit button{
+    height: 53px;
+    background-color: var(--color-primary);
+    border: 0;
+    color: var(--color-white);
+    width: 100px;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Search Section CSS End */
